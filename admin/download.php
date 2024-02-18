@@ -26,7 +26,7 @@ while ($row = mysqli_fetch_assoc($query)) {
 }
 $data = "<table border='1'>
 <tr>
-<td>ID</td>
+<th>ID</th>
 <th>Name</th>
 <th>Email</th>
 <th>Contact</th>
