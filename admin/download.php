@@ -6,10 +6,10 @@ if ($_SESSION['id'] == '') {
 }
 
 $query        = mysqli_query($conn, "SELECT * FROM `users` where status in(1)");
-$row          = mysqli_fetch_array($query);
+$row          = mysqli_fetch_assoc($query);
 $i            = 1;
 $columnHeader = '';
-$tablerow = '';
+$tablerow     = '';
 
 while ($row = mysqli_fetch_assoc($query)) {
     $tablerow .= "
