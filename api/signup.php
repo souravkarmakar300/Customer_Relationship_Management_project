@@ -51,7 +51,7 @@ if ($_POST["submit"]) {
             $body    = "Login successfully";
             sendMail($email, $subject, $body);
             
-            echo "<script>alert('Successfull Register');</script>";
+            echo "<script>alert('Successfully Register');</script>";
             echo "<script>window.location.href='../login.html'</script>";
         }
     }
